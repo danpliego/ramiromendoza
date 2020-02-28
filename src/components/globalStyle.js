@@ -98,7 +98,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.25;
+    line-height: 1.4;
     margin-top: 0;
     margin-bottom: 1rem;
   }
@@ -649,13 +649,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .form-control {
-    border: 1px solid #E9E9E9;
-    border-radius: 2px;
-    padding: 1rem 2rem;
-    min-height: 53px;
+    border: 0;
+    border-bottom: 1px solid #F1C115;
+    padding: 1rem;
     width: 100%;
     margin-bottom: 1rem;
     outline: 0;
+    background: none;
+    color: #fff;
   }
 
   .reset-padding {

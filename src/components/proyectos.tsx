@@ -11,122 +11,21 @@ export const Proyectos: React.FC = () => {
   return (
     <>
       <Comp.Section>
-        <SectionButton onClick={() => setConstruccion(false)}>
-          Proyectos Arquitectónicos
-        </SectionButton>
-        <SectionButton onClick={() => setConstruccion(true)}>
-          Proyectos de Construcción
-        </SectionButton>
+        <Comp.TextCenter>
+          <SectionButton onClick={() => setConstruccion(false)}>
+            Proyectos Arquitectónicos
+          </SectionButton>
+          <SectionButton onClick={() => setConstruccion(true)}>
+            Proyectos de Construcción
+          </SectionButton>
+        </Comp.TextCenter>
         {isConstruccion ? (
           <>
-            <h1 className="serif" style={{ marginTop: "2rem" }}>
-              Proyectos de Construcción
-            </h1>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
+            <Comp.TextCenter>
+              <h1 className="serif" style={{ marginTop: "2rem" }}>
+                Proyectos de Construcción
+              </h1>
+            </Comp.TextCenter>
 
             <Project>
               <ProjectTitle>
@@ -165,9 +64,11 @@ export const Proyectos: React.FC = () => {
           </>
         ) : (
           <>
-            <h1 className="serif" style={{ marginTop: "2rem" }}>
-              Proyectos Arquitectónicos
-            </h1>
+            <Comp.TextCenter>
+              <h1 className="serif" style={{ marginTop: "2rem" }}>
+                Proyectos Arquitectónicos
+              </h1>
+            </Comp.TextCenter>
 
             <Project>
               <ProjectTitle>

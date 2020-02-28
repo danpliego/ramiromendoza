@@ -139,7 +139,7 @@ export const FlexCenterChild = styled(FlexContainer)`
 `;
 
 export const FlexAlignChild = styled(FlexContainer)`
-  align-items: center;
+  talign-items: center;
 `;
 
 export const FlexJustifyChild = styled(FlexContainer)`
@@ -160,11 +160,7 @@ export const TextRight = styled.div`
 
 export const sharedContainer = css`
   margin: 0px auto;
-  padding: 3rem 1rem;
-
-  @media ${theme.breakpoint.upFromMobile} {
-    padding: 5rem 3rem 3rem;
-  }
+  padding: 3rem 0rem;
 `;
 
 export const Width75 = styled.div`

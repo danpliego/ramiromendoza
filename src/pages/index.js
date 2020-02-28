@@ -12,8 +12,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
+    <Hero />
     <Comp.Container>
-      <Hero />
       <ServiciosSection>
         <ServiciosTitle>Servicios</ServiciosTitle>
         <ServiciosContent>
@@ -69,6 +69,7 @@ const ServiciosSection = styled(Comp.Section)`
   position: relative;
   z-index: 1;
   padding-bottom: 0 !important;
+  padding-left: 3rem;
 `;
 
 const ServiciosTitle = styled.p`
