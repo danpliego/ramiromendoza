@@ -37,9 +37,14 @@ export default class MyForm extends React.Component {
         />
         <input
           className="form-control"
-          type="text"
-          name="giro-comercial"
-          placeholder="Giro Comercial"
+          type="email"
+          name="email"
+          placeholder="Teléfono"
+        />
+        <textarea
+          className="form-control"
+          name="mensaje"
+          placeholder="Mensaje"
         />
         {status === "SUCCESS" ? (
           <p
@@ -49,7 +54,7 @@ export default class MyForm extends React.Component {
               background: "#B7DFC2"
             }}
           >
-            {this.props.successText}
+            Formulario enviado con exito
           </p>
         ) : (
           <ButtonDownload>Enviar</ButtonDownload>
@@ -63,7 +68,7 @@ export default class MyForm extends React.Component {
               marginTop: "1rem"
             }}
           >
-            Completa el formulario para recibir tu link de descarga
+            Oops, algo salió mal...
           </p>
         )}
       </form>
