@@ -101,7 +101,7 @@ const HeroGallery = styled(Comp.Column)`
   }
 `;
 
-const CustomSlider = styled(Slider)`
+export const CustomSlider = styled(Slider)`
   min-height: 500px;
   animation: ${Keyframes.Dissolve} 1s ease-in-out;
 
@@ -143,6 +143,6 @@ const HeroGalleryItem = styled.div`
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 `;
