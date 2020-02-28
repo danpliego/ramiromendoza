@@ -2,41 +2,24 @@ import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 
 // eslint-disable-next-line
-const GTAmericaExtendedRegular = require("../fonts/GT-America-Extended-Regular.otf");
+const GTAmerica = require("../fonts/GT-America-Mono-Regular.otf");
 // eslint-disable-next-line
-const GTAmericaExtendedMedium = require("../fonts/GT-America-Extended-Medium.otf");
-// eslint-disable-next-line
-const TiemposHeadline = require("../fonts/TiemposHeadline-Bold.otf");
-// eslint-disable-next-line
-const TiemposHeadlineMedium = require("../fonts/TiemposHeadline-Medium.otf");
+const OGG = require("../fonts/Ogg-Medium.ttf");
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: "GT-America";
+    font-family: "Ogg";
     font-style: normal;
     font-weight: 400;
-    src: url(${GTAmericaExtendedRegular});
+    src: url(${OGG});
   }
 
   @font-face {
-    font-family: "GT-America";
+    font-family: "GT America Mono";
     font-style: normal;
     font-weight: 600;
-    src: url(${GTAmericaExtendedMedium});
+    src: url(${GTAmerica});
   }
-
-  @font-face {
-    font-family: "Tiempos-Headline";
-    font-weight: 400;
-    src: url(${TiemposHeadlineMedium});
-  }
-  
-  @font-face {
-    font-family: "Tiempos-Headline";
-    font-weight: 600;
-    src: url(${TiemposHeadline});
-  }
-
 
   :root {
     --primary-color: #141943;
@@ -57,12 +40,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   main {
     flex: 1 0 auto;
-    h1,h2,h3,h4,h5,h6 {
-    color: #0c2340;
-    }
-    a {
-      color: #2A5DB0;
-    }
   }
   a {
     text-decoration: none;
@@ -126,13 +103,8 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 1rem;
   }
 
-  .extended {
-    font-family: "Tiempos-Headline";
-  }
-
-  .extended-medium {
-    font-family: "Tiempos-Headline";
-    font-weight: 400;
+  .serif {
+    font-family: "Ogg";
   }
 
   h1 {
@@ -316,8 +288,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    color: #141943;
-    font-family: GT-America, sans-serif;
+    color: #fff;
+    font-family: "GT America Mono", sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -325,7 +297,9 @@ export const GlobalStyle = createGlobalStyle`
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
-    background: #F7F9FA;
+    background: #222222;
+    -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
   }
   img {
     max-width: 100%;

@@ -4,32 +4,20 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import * as Comp from "../components/layoutComponents";
 import styled from "styled-components";
+import Hero from "../components/hero";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero>
-      <Comp.Container>
-        <Comp.Row mobile>
-          <Comp.Column>
-            logo
-            <p>
-              Arquitecto integral especializado en construcción, remodelación y
-              reutilización de espacios existentes para giros habitacional,
-              comercial e industrial.
-            </p>
-          </Comp.Column>
-          <Comp.Column>slider here</Comp.Column>
-        </Comp.Row>
-      </Comp.Container>
-    </Hero>
+
     <Comp.Container>
+      <Hero />
       <Comp.Section>
         <ServiciosTitle>Servicios</ServiciosTitle>
         <ServiciosContent>
           <Comp.Row mobile>
             <Comp.Column>
-              <h3>
+              <h3 className="serif">
                 <span>01</span>
                 Proyectos
               </h3>
@@ -40,7 +28,7 @@ const IndexPage = () => (
               </ul>
             </Comp.Column>
             <Comp.Column>
-              <h3>
+              <h3 className="serif">
                 <span>02</span>
                 Enfoques
               </h3>
@@ -54,7 +42,7 @@ const IndexPage = () => (
               </ul>
             </Comp.Column>
             <Comp.Column>
-              <h3>
+              <h3 className="serif">
                 <span>03</span>
                 Remodelación
               </h3>
@@ -96,8 +84,6 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
-
-const Hero = styled.div``;
 
 const ServiciosTitle = styled.p``;
 
