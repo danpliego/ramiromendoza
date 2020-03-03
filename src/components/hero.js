@@ -33,7 +33,7 @@ const Hero = () => (
             </HeroGalleryItem>
             <HeroGalleryItem>
               <img src={PlaceholderImage} />
-              <p>Zempoala 560 - 2018</p>
+              <p>Zempoala 560</p>
             </HeroGalleryItem>
           </CustomSlider>
         </HeroGallery>
@@ -144,5 +144,6 @@ const HeroGalleryItem = styled.div`
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 0.5rem;
+    font-size: 12px;
   }
 `;

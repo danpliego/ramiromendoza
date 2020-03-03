@@ -2,9 +2,43 @@ import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import * as Comp from "../components/layoutComponents";
 import { theme } from "./theme";
-import { CustomSlider } from "./hero";
 
-import PlaceholderImage from "../images/gallery-placeholder.png";
+import { ProjectCard } from "./project";
+
+import Zempoala1 from "../images/zempoala/1.jpg";
+import Zempoala2 from "../images/zempoala/2.jpg";
+import Zempoala3 from "../images/zempoala/3.jpg";
+import Zempoala4 from "../images/zempoala/4.jpg";
+import Zempoala5 from "../images/zempoala/5.jpg";
+import Zempoala6 from "../images/zempoala/6.jpg";
+import Zempoala7 from "../images/zempoala/7.jpg";
+import Zempoala8 from "../images/zempoala/8.jpg";
+import Zempoala9 from "../images/zempoala/9.jpg";
+
+import Mar1 from "../images/mar/1.jpg";
+import Mar2 from "../images/mar/2.jpg";
+import Mar3 from "../images/mar/3.jpg";
+import Mar4 from "../images/mar/4.jpg";
+import Mar5 from "../images/mar/5.jpg";
+import Mar6 from "../images/mar/6.jpg";
+import Mar7 from "../images/mar/7.jpg";
+
+import Oriente1 from "../images/oriente/1.jpg";
+import Oriente2 from "../images/oriente/2.jpg";
+import Oriente3 from "../images/oriente/3.jpg";
+import Oriente4 from "../images/oriente/4.jpg";
+import Oriente5 from "../images/oriente/5.jpg";
+import Oriente6 from "../images/oriente/6.jpg";
+import Oriente7 from "../images/oriente/7.jpg";
+import Oriente8 from "../images/oriente/8.jpg";
+import Oriente9 from "../images/oriente/9.jpg";
+
+import Lago1 from "../images/lago/1.jpg";
+import Lago2 from "../images/lago/2.jpg";
+import Lago3 from "../images/lago/3.jpg";
+import Lago4 from "../images/lago/4.jpg";
+import Lago5 from "../images/lago/5.jpg";
+import Lago6 from "../images/lago/6.jpg";
 
 export const Proyectos: React.FC = () => {
   const [isConstruccion, setConstruccion] = useState(false);
@@ -26,41 +60,6 @@ export const Proyectos: React.FC = () => {
                 Proyectos de Construcción
               </h1>
             </Comp.TextCenter>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
           </>
         ) : (
           <>
@@ -70,145 +69,149 @@ export const Proyectos: React.FC = () => {
               </h1>
             </Comp.TextCenter>
 
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
+            <ProjectCard
+              title="Zempoala 560"
+              description="REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS / ALUMINIOS
+              / READECUACIÓN DE ESPACIOS"
+            >
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Zempoala1} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Zempoala2} />
+                    <img src={Zempoala3} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Zempoala4} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Zempoala5} />
+                    <img src={Zempoala6} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Zempoala7} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Zempoala8} />
+                    <img src={Zempoala9} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+            </ProjectCard>
 
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
+            <ProjectCard
+              title="Mar de la Tranquilidad 20"
+              description="PROYECTO DE REMODELACIÓN INTERIOR Y EXTERIOR ESPECÍFICAMENTE DE ACABADOS"
+            >
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnSmall>
+                    <img src={Mar2} />
+                  </GalleryColumnSmall>
+                  <GalleryColumnBig>
+                    <img src={Mar1} />
+                  </GalleryColumnBig>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnSmall>
+                    <img src={Mar4} />
+                    <img src={Mar5} />
+                  </GalleryColumnSmall>
+                  <GalleryColumnBig>
+                    <img src={Mar3} />
+                  </GalleryColumnBig>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnSmall>
+                    <img src={Mar7} />
+                  </GalleryColumnSmall>
+                  <GalleryColumnBig>
+                    <img src={Mar6} />
+                  </GalleryColumnBig>
+                </Comp.Row>
+              </div>
+            </ProjectCard>
 
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
+            <ProjectCard
+              title="Oriente 237 - 430"
+              description="REMODELACIÓN CON REESTRUCTURACIÓN INTERIOR Y EXTERIOR CONVIRTIENDO LA PROPIEDAD DE CASA HABITACIÓN A 6 DEPARTAMENTOS EN RENTA."
+            >
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Oriente1} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Oriente2} />
+                    <img src={Oriente3} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Oriente4} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Oriente5} />
+                    <img src={Oriente6} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Oriente7} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Oriente8} />
+                    <img src={Oriente9} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+            </ProjectCard>
 
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
-
-            <Project>
-              <ProjectTitle>
-                Zempoala 560
-                <small>
-                  REMODELACIÓN SIN MODIFICAR ESTRUCTURA / ACABADOS / MADERAS /
-                  ALUMINIOS / READECUACIÓN DE ESPACIOS
-                </small>
-              </ProjectTitle>
-
-              <CustomSlider autoplay>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-                <div>
-                  <Comp.Row mobile>
-                    <GalleryColumnBig>
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnBig>
-                    <GalleryColumnSmall>
-                      <img src={PlaceholderImage} />
-                      <img src={PlaceholderImage} />
-                    </GalleryColumnSmall>
-                  </Comp.Row>
-                </div>
-              </CustomSlider>
-            </Project>
+            <ProjectCard
+              title="Lago Victoria 86"
+              description="EJECUCIÓN DE CANCELERÍA Y CELOSÍA"
+            >
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnSmall>
+                    <img src={Lago2} />
+                    <img src={Lago3} />
+                  </GalleryColumnSmall>
+                  <GalleryColumnBig>
+                    <img src={Lago1} />
+                  </GalleryColumnBig>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnSmall>
+                    <img src={Lago5} />
+                    <img src={Lago6} />
+                  </GalleryColumnSmall>
+                  <GalleryColumnBig>
+                    <img src={Lago4} />
+                  </GalleryColumnBig>
+                </Comp.Row>
+              </div>
+            </ProjectCard>
           </>
         )}
       </Comp.Section>
@@ -240,31 +243,12 @@ const SectionButton = styled.button`
   }
 `;
 
-const Project = styled.div`
-  padding: 2rem 0;
-`;
-
-const ProjectTitle = styled.h4`
-  font-family: "Ogg";
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-
-  small {
-    margin-left: 1rem;
-    font-family: "GT America Mono";
-    color: ${theme.colors.bodyLColor};
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-`;
-
-const GalleryColumnBig = styled(Comp.Column)`
-  width: 66.9%;
+export const GalleryColumnBig = styled(Comp.Column)`
+  width: 65.2%;
   padding: 0.5rem;
 `;
 
-const GalleryColumnSmall = styled(Comp.Column)`
+export const GalleryColumnSmall = styled(Comp.Column)`
   width: 33.1%;
   padding: 0.5rem;
 

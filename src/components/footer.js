@@ -25,7 +25,7 @@ const Footer = () => (
           <h4 className="serif">Solicita una cotización</h4>
           <MyForm />
         </Comp.Column>
-        <Comp.Column style={{ flex: "1" }} padded>
+        <Comp.Column style={{ flex: "1", paddingLeft: "3rem" }} padded>
           <a href="/">
             <img src="" width="180" />
           </a>
