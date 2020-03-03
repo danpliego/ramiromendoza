@@ -69,12 +69,12 @@ export const Proyectos: React.FC = () => {
               <h1 className="serif" style={{ marginTop: "2rem" }}>
                 Proyectos de Construcción
               </h1>
+              <TitleSmall>
+                EN COLABORACIÓN CON HERMANOS MENDOZA PARA DESPACHOS
+                ARQUITECTÓNICOS
+              </TitleSmall>
             </Comp.TextCenter>
-
-            <ProjectCard
-              title="Proyectos Varios"
-              description="EN COLABORACIÓN CON LOS HERMANOS MENDOZA PARA DIFERENTES DESPACHOS"
-            >
+            <ProjectConstruccion>
               <div>
                 <Comp.Row mobile>
                   <GalleryColumnBig>
@@ -108,7 +108,7 @@ export const Proyectos: React.FC = () => {
                   </GalleryColumnSmall>
                 </Comp.Row>
               </div>
-            </ProjectCard>
+            </ProjectConstruccion>
           </>
         ) : (
           <>
@@ -304,4 +304,24 @@ export const GalleryColumnSmall = styled(Comp.Column)`
   img {
     margin-bottom: 0.5rem;
   }
+`;
+
+const ProjectConstruccion = styled.div`
+  position: relative;
+  z-index: 2;
+
+  > div {
+    margin-bottom: 2rem;
+  }
+`;
+
+const TitleSmall = styled.small`
+  margin-left: 1rem;
+  font-family: "GT America Mono";
+  color: ${theme.colors.bodyLColor};
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  white-space: normal;
+  margin-bottom: 3rem;
+  display: block;
 `;

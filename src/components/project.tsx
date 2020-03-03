@@ -11,7 +11,7 @@ export const ProjectCard = ({ title, description, children }) => {
         <small>{description}</small>
       </ProjectTitle>
 
-      <CustomSlider autoplay>{children}</CustomSlider>
+      <CustomSlider>{children}</CustomSlider>
     </Project>
   );
 };
