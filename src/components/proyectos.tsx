@@ -284,8 +284,9 @@ const SectionButton = styled.button`
   color: ${theme.colors.primaryColor};
   cursor: pointer;
   transition: all 0.15s ease-in-out;
+  outline: none;
 
-  &:hover {
+  &:hover, &:active {
     transform: translate(0px, -3px);
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.darkColor};
@@ -293,13 +294,19 @@ const SectionButton = styled.button`
 `;
 
 export const GalleryColumnBig = styled(Comp.Column)`
-  width: 65.2%;
   padding: 0.5rem;
+
+  @media ${theme.breakpoint.upFromMobile} {
+    width: 65.2%;
+  }
 `;
 
 export const GalleryColumnSmall = styled(Comp.Column)`
-  width: 33.1%;
   padding: 0.5rem;
+
+  @media ${theme.breakpoint.upFromMobile} {
+    width: 33.1%;
+  }
 
   img {
     margin-bottom: 0.5rem;

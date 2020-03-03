@@ -6,12 +6,16 @@ import Slider from "infinite-react-carousel";
 import * as Keyframes from "./keyframes";
 
 import Logo from "../images/logo.svg";
-import PlaceholderImage from "../images/gallery-placeholder.png";
 import YellowDetailImage from "../images/soumaya.jpg";
 import BlackDetailImage from "../images/black-detail.jpg";
 
 import ArrowRight from "../images/arrow-right.png";
 import ArrowLeft from "../images/arrow-left.png";
+
+import Image1 from "../images/gallery-placeholder.png";
+import Image2 from "../images/hero2.jpg";
+import Image3 from "../images/hero3.jpg";
+import Image4 from "../images/hero4.jpg";
 
 const Hero = () => (
   <HeroContainer>
@@ -28,12 +32,20 @@ const Hero = () => (
         <HeroGallery>
           <CustomSlider autoplay>
             <HeroGalleryItem>
-              <img src={PlaceholderImage} />
-              <p>Zempoala 560 - 2018</p>
+              <img src={Image1} />
+              <p>Zempoala 560</p>
             </HeroGalleryItem>
             <HeroGalleryItem>
-              <img src={PlaceholderImage} />
+              <img src={Image2} />
+              <p>Mar de la Tranquilidad 20</p>
+            </HeroGalleryItem>
+            <HeroGalleryItem>
+              <img src={Image3} />
               <p>Zempoala 560</p>
+            </HeroGalleryItem>
+            <HeroGalleryItem>
+              <img src={Image4} />
+              <p>Lago Victoria 86</p>
             </HeroGalleryItem>
           </CustomSlider>
         </HeroGallery>
@@ -129,7 +141,9 @@ const HeroGallery = styled(Comp.Column)`
 
 export const CustomSlider = styled(Slider)`
   min-height: 500px;
-  animation: ${Keyframes.Dissolve} 1s ease-in-out;
+  animation: ${Keyframes.Dissolve} 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 
   .carousel-arrow {
     background: black;
