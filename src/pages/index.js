@@ -70,6 +70,10 @@ const ServiciosSection = styled(Comp.Section)`
   z-index: 1;
   padding-bottom: 0 !important;
   padding-left: 3rem;
+
+  @media ${theme.breakpoint.onlyMobile} {
+    padding: 0 0 0 3rem;
+  }
 `;
 
 const ServiciosTitle = styled.p`

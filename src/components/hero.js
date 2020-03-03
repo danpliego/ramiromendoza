@@ -58,10 +58,12 @@ const sharedDetail = css`
   position: absolute;
   top: 0;
 
-  img {
-    height: 100%;
-    width: auto;
-    max-width: none;
+  @media ${theme.breakpoint.upFromMobile} {
+    img {
+      height: 100%;
+      width: auto;
+      max-width: none;
+    }
   }
 `;
 
@@ -71,6 +73,13 @@ const HeroYellowShade = styled.div`
   right: 0;
   width: 50%;
   height: 120%;
+
+  @media ${theme.breakpoint.onlyMobile} {
+    top: 500px;
+    width: 100%;
+    left: 0;
+    height: 200px;
+  }
 `;
 
 const HeroBlackShade = styled.div`
@@ -80,6 +89,10 @@ const HeroBlackShade = styled.div`
   left: 0;
   width: 50%;
   height: 120%;
+
+  @media ${theme.breakpoint.onlyMobile} {
+    display: none;
+  }
 `;
 
 const HeroContent = styled(Comp.Row)`
@@ -91,6 +104,15 @@ const HeroContent = styled(Comp.Row)`
 
 const HeroText = styled(Comp.Column)`
   animation: ${Keyframes.SlideBottomLarge} 1s ease-in-out;
+
+  @media ${theme.breakpoint.onlyMobile} {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+      max-width: 75%;
+    }
+  }
 `;
 
 const HeroGallery = styled(Comp.Column)`
@@ -98,6 +120,10 @@ const HeroGallery = styled(Comp.Column)`
 
   @media ${theme.breakpoint.upFromMobile} {
     padding-left: 10%;
+  }
+
+  @media ${theme.breakpoint.onlyMobile} {
+    width: 100%;
   }
 `;
 
