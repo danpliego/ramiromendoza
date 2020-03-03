@@ -40,6 +40,16 @@ import Lago4 from "../images/lago/4.jpg";
 import Lago5 from "../images/lago/5.jpg";
 import Lago6 from "../images/lago/6.jpg";
 
+import Construccion1 from "../images/construccion/1.jpg";
+import Construccion2 from "../images/construccion/2.jpg";
+import Construccion3 from "../images/construccion/3.jpg";
+import Construccion4 from "../images/construccion/4.jpg";
+import Construccion5 from "../images/construccion/5.jpg";
+import Construccion6 from "../images/construccion/6.jpg";
+import Construccion7 from "../images/construccion/7.jpg";
+import Construccion8 from "../images/construccion/8.jpg";
+import Construccion9 from "../images/construccion/9.jpg";
+
 export const Proyectos: React.FC = () => {
   const [isConstruccion, setConstruccion] = useState(false);
   return (
@@ -60,6 +70,45 @@ export const Proyectos: React.FC = () => {
                 Proyectos de Construcción
               </h1>
             </Comp.TextCenter>
+
+            <ProjectCard
+              title="Proyectos Varios"
+              description="EN COLABORACIÓN CON LOS HERMANOS MENDOZA PARA DIFERENTES DESPACHOS"
+            >
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Construccion1} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion2} />
+                    <img src={Construccion3} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Construccion4} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion5} />
+                    <img src={Construccion6} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Construccion7} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion8} />
+                    <img src={Construccion9} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+            </ProjectCard>
           </>
         ) : (
           <>
