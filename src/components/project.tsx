@@ -35,4 +35,15 @@ const ProjectTitle = styled.h4`
     letter-spacing: 1px;
     white-space: normal;
   }
+
+  @media ${theme.breakpoint.onlyMobile} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+
+    small {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
 `;

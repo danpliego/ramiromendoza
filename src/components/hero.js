@@ -16,6 +16,7 @@ import Image1 from "../images/gallery-placeholder.png";
 import Image2 from "../images/hero2.jpg";
 import Image3 from "../images/hero3.jpg";
 import Image4 from "../images/hero4.jpg";
+import Image5 from "../images/hero5.jpg";
 
 const Hero = () => (
   <HeroContainer>
@@ -46,6 +47,10 @@ const Hero = () => (
             <HeroGalleryItem>
               <img src={Image4} />
               <p>Lago Victoria 86</p>
+            </HeroGalleryItem>
+            <HeroGalleryItem>
+              <img src={Image5} />
+              <p>Oriente 237 - 430</p>
             </HeroGalleryItem>
           </CustomSlider>
         </HeroGallery>
