@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `MyBusiness POS - El punto de venta más vendido en el mercado.`,
-    description: `Olvídate de las largas capacitaciones para usar un sistema de punto de venta, descarga gratis MyBusiness POS y comprueba lo fácil que es vender.`,
+    title: `Ramiro Mendoza - Arquitecto`,
+    description: `Cuenta con amplia experiencia en desarrollo de proyectos que van desde el diseño hasta la ejecución de los mismos, siendo desde casa habitación hasta construcción de departamentos en condominio, así como remodelación de espacios, todo con una sola intención de entregar una calidad ejemplar.`,
     author: ``
   },
   plugins: [

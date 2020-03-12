@@ -5,7 +5,7 @@ import { theme } from "./theme";
 import Slider from "infinite-react-carousel";
 import * as Keyframes from "./keyframes";
 
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo.png";
 import YellowDetailImage from "../images/soumaya.jpg";
 import BlackDetailImage from "../images/black-detail.jpg";
 
@@ -121,6 +121,17 @@ const HeroContent = styled(Comp.Row)`
 
 const HeroText = styled(Comp.Column)`
   animation: ${Keyframes.SlideBottomLarge} 1s ease-in-out;
+
+  @media ${theme.breakpoint.upFromMobile} {
+    padding-top: 10rem;
+
+    img {
+      position: absolute;
+      width: 450px;
+      top: 5rem;
+      z-index: 3;
+    }
+  }
 
   @media ${theme.breakpoint.onlyMobile} {
     text-align: center;

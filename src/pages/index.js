@@ -8,12 +8,14 @@ import Hero from "../components/hero";
 import { theme } from "../components/theme";
 import { Proyectos } from "../components/proyectos";
 
+import BlackImage from "../images/black-bg.png";
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
     <Hero />
-    <Comp.Container>
+    <MainContainer>
       <ServiciosSection>
         <ServiciosTitle>Servicios</ServiciosTitle>
         <ServiciosContent>
@@ -59,11 +61,26 @@ const IndexPage = () => (
         </ServiciosContent>
       </ServiciosSection>
       <Proyectos />
-    </Comp.Container>
+    </MainContainer>
+    <FooterBio>
+      <div>
+        <span>RAMIRO MENDOZA // ARQUITECTO</span>
+        Cuenta con amplia experiencia en desarrollo de proyectos que van desde
+        el diseño hasta la ejecución de los mismos, siendo desde casa habitación
+        hasta construcción de departamentos en condominio, así como remodelación
+        de espacios, todo con una sola intención de entregar una calidad
+        ejemplar.
+      </div>
+    </FooterBio>
   </Layout>
 );
 
 export default IndexPage;
+
+const MainContainer = styled(Comp.Container)`
+  z-index: 2;
+  position: relative;
+`;
 
 const ServiciosSection = styled(Comp.Section)`
   position: relative;
@@ -112,5 +129,32 @@ const ServiciosContent = styled.div`
     li {
       color: ${theme.colors.bodyLColor};
     }
+  }
+`;
+
+const FooterBio = styled.div`
+  background: url(${BlackImage});
+  position: relative;
+  background-size: cover;
+
+  margin-top: -10rem;
+  padding: 10rem 5rem 10rem;
+
+  span {
+    color: ${theme.colors.primaryColor};
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  > div {
+    @media ${theme.breakpoint.upFromMobile} {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    border: 1px solid ${theme.colors.primaryColor};
+    padding: 3rem;
+    font-size: 18px;
+    text-align: center;
   }
 `;

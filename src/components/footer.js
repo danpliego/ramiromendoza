@@ -5,7 +5,8 @@ import { theme } from "./theme";
 import MyForm from "./download_form";
 
 import YellowImage from "../images/soumaya.jpg";
-import Logo from "../images/logo.svg";
+
+import Logo from "../images/logo.png";
 
 import IconEmail from "../images/email.svg";
 import IconPhone from "../images/phone.svg";
@@ -13,13 +14,6 @@ import IconPhone from "../images/phone.svg";
 const Footer = () => (
   <FooterContainer>
     <Comp.Container>
-      <FooterBio className="serif">
-        Cuenta con amplia experiencia en desarrollo de proyectos que van desde
-        el diseño hasta la ejecución de los mismos, siendo desde casa habitación
-        hasta construcción de departamentos en condominio, así como remodelación
-        de espacios, todo con una sola intención de entregar una calidad
-        ejemplar.
-      </FooterBio>
       <Comp.Row mobile padded>
         <Comp.Column style={{ flex: "1" }} padded>
           <h4 className="serif">Solicita una cotización</h4>
@@ -68,14 +62,7 @@ const FooterContainer = styled.footer`
   background: url(${YellowImage});
   background-size: cover;
   color: ${props => props.theme.colors.whiteColor};
-  margin-top: -10rem;
-  padding-top: 10rem;
-`;
-
-const FooterBio = styled.h2`
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid ${theme.colors.primaryColor};
+  padding-top: 5rem;
 `;
 
 const InfoRow = styled(Comp.Row)`
