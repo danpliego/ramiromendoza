@@ -25,7 +25,7 @@ const Hero = () => (
         <HeroText>
           <img src={Logo} style={{ marginBottom: "2rem" }} />
           <p style={{ opacity: "75%" }}>
-            Arquitecto integral especializado en construcción, remodelación y
+            En ram arquitecto nos especializamos en construcción, remodelación y
             reutilización de espacios existentes para giros habitacional,
             comercial e industrial.
           </p>

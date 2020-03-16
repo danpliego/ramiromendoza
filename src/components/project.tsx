@@ -20,7 +20,7 @@ const Project = styled.div`
   padding: 2rem 0;
 `;
 
-const ProjectTitle = styled.h4`
+export const ProjectTitle = styled.h4`
   font-family: "Ogg";
   display: flex;
   align-items: center;

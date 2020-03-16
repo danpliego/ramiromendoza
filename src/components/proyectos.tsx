@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import * as Comp from "../components/layoutComponents";
 import { theme } from "./theme";
 
-import { ProjectCard } from "./project";
+import { ProjectCard, ProjectTitle } from "./project";
 
 import Zempoala1 from "../images/zempoala/1.jpg";
 import Zempoala2 from "../images/zempoala/2.jpg";
@@ -45,10 +45,14 @@ import Construccion2 from "../images/construccion/2.jpg";
 import Construccion3 from "../images/construccion/3.jpg";
 import Construccion4 from "../images/construccion/4.jpg";
 import Construccion5 from "../images/construccion/5.jpg";
-import Construccion6 from "../images/construccion/6.jpg";
 import Construccion7 from "../images/construccion/7.jpg";
 import Construccion8 from "../images/construccion/8.jpg";
 import Construccion9 from "../images/construccion/9.jpg";
+
+import ConstruccionExtra1 from "../images/construccion/extra1.jpg";
+import ConstruccionExtra2 from "../images/construccion/extra2.jpg";
+import ConstruccionExtra3 from "../images/construccion/extra3.jpg";
+import ConstruccionExtra4 from "../images/construccion/extra4.jpg";
 
 export const Proyectos: React.FC = () => {
   const [isConstruccion, setConstruccion] = useState(false);
@@ -70,41 +74,58 @@ export const Proyectos: React.FC = () => {
                 Proyectos de Construcción
               </h1>
               <TitleSmall>
-                EN COLABORACIÓN CON HERMANOS MENDOZA PARA DESPACHOS
-                ARQUITECTÓNICOS
+                Proyectos de construcción.....en colaboración con Hermanos
+                Mendoza, desde scouting en predios factibles para inversión,
+                ejecución del proyecto Arquitectónico ejecutivo, hasta llave en
+                mano.
               </TitleSmall>
             </Comp.TextCenter>
             <ProjectConstruccion>
               <div>
+                <ProjectTitle>ANDREA DEL CASTAÑO #51</ProjectTitle>
                 <Comp.Row mobile>
                   <GalleryColumnBig>
-                    <img src={Construccion1} />
-                  </GalleryColumnBig>
-                  <GalleryColumnSmall>
-                    <img src={Construccion2} />
-                    <img src={Construccion3} />
-                  </GalleryColumnSmall>
-                </Comp.Row>
-              </div>
-              <div>
-                <Comp.Row mobile>
-                  <GalleryColumnBig>
-                    <img src={Construccion4} />
-                  </GalleryColumnBig>
-                  <GalleryColumnSmall>
-                    <img src={Construccion5} />
-                    <img src={Construccion6} />
-                  </GalleryColumnSmall>
-                </Comp.Row>
-              </div>
-              <div>
-                <Comp.Row mobile>
-                  <GalleryColumnBig>
-                    <img src={Construccion7} />
+                    <img src={Construccion9} />
                   </GalleryColumnBig>
                   <GalleryColumnSmall>
                     <img src={Construccion8} />
-                    <img src={Construccion9} />
+                    <img src={Construccion4} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <ProjectTitle>TUXPAN #105</ProjectTitle>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={Construccion5} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion3} />
+                    <img src={ConstruccionExtra1} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <ProjectTitle>CALETA #19</ProjectTitle>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={ConstruccionExtra2} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion1} />
+                    <img src={Construccion7} />
+                  </GalleryColumnSmall>
+                </Comp.Row>
+              </div>
+              <div>
+                <ProjectTitle>CASAS GRANDES #33</ProjectTitle>
+                <Comp.Row mobile>
+                  <GalleryColumnBig>
+                    <img src={ConstruccionExtra3} />
+                  </GalleryColumnBig>
+                  <GalleryColumnSmall>
+                    <img src={Construccion2} />
+                    <img src={ConstruccionExtra4} />
                   </GalleryColumnSmall>
                 </Comp.Row>
               </div>
