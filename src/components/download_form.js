@@ -20,7 +20,7 @@ export default class MyForm extends React.Component {
     return (
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/mzbrbpyp"
+        action="https://formspree.io/xoqlwpkd"
         method="POST"
       >
         <input
@@ -37,8 +37,8 @@ export default class MyForm extends React.Component {
         />
         <input
           className="form-control"
-          type="email"
-          name="email"
+          type="text"
+          name="text"
           placeholder="Teléfono"
         />
         <textarea
